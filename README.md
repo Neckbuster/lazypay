@@ -26,6 +26,7 @@ Directly access the UI using this [Link](http://http://13.127.2.247:8080/)
 Clone the repo with git
 ```
 git clone https://github.com/Neckbuster/lazypay.git
+cd lazypay/
 ```
 Build and run with Makefile
 ```
