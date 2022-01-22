@@ -21,4 +21,4 @@ RUN go build  ./cmd/main.go
 EXPOSE 8080
 
 # Run the binary program produced by `go install`
-CMD ["/main"]
+CMD ["./main"]
