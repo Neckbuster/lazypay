@@ -1,4 +1,4 @@
-# lazypay
+# Lazypay
 Go and stripe based payment gateway
 <!-- <p align="center">
 <img width="300" src=""/>
@@ -22,3 +22,4 @@ Under Construction
 
 ### Using Lazypay UI
 ### With Docker
+

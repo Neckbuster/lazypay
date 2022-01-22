@@ -15,9 +15,10 @@ var (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 	// Add support for html files
-	r.LoadHTMLGlob("templates/*.tmpl")
+	r.LoadHTMLGlob("pkg/templates/*.tmpl")
 	// Allow all origin
 	conf := cors.DefaultConfig()
 	conf.AllowOrigins = []string{"*"}

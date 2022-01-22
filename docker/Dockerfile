@@ -17,8 +17,8 @@ COPY . .
 RUN go build -o /out ./cmd
 
 
-# This container exposes port 5000 to the outside world
-EXPOSE 5000
+# This container exposes port 8080 to the outside world
+EXPOSE 8080
 
 # Run the binary program produced by `go install`
 CMD ["/out"]
