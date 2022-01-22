@@ -1,5 +1,5 @@
 build:
-	docker build -t neckbuster/lazypay docker/
+	docker build -t neckbuster/lazypay .
 
 run:
 	docker run --env-file .env.production -t neckbuster/lazypay
