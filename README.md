@@ -22,7 +22,15 @@ Under Construction
 
 ### Using Lazypay UI
 Directly access the UI using this [Link](http://http://13.127.2.247:8080/)
+
+---
 ### With Docker
+Use your own stripe keys from Stripe [Dashboard](https://dashboard.stripe.com/login)
+
+Update Keys in ``` .env.production ```
+
+---
+
 Clone the repo with git
 ```
 git clone https://github.com/Neckbuster/lazypay.git
