@@ -21,5 +21,13 @@ Under Construction
 ## How to run
 
 ### Using Lazypay UI
+Directly access the UI using this [Link](http://http://13.127.2.247:8080/)
 ### With Docker
-
+Clone the repo with git
+```
+git clone https://github.com/Neckbuster/lazypay.git
+```
+Build and run with Makefile
+```
+sudo make all
+```
