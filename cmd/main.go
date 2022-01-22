@@ -10,11 +10,14 @@ import (
 )
 
 var (
-	stripeKey = os.Getenv("STRIPE_SECRET_KEY")
+	stripeKeyPublish = os.Getenv("STRIPE_PUBLISHABLE_KEY")
+	stripeKeySecret  = os.Getenv("STRIPE_SECRET_KEY")
 )
 
 func main() {
 	r := gin.Default()
+	// Add support for html files
+	r.LoadHTMLGlob("templates/*.tmpl")
 	// Allow all origin
 	conf := cors.DefaultConfig()
 	conf.AllowOrigins = []string{"*"}
@@ -22,7 +25,7 @@ func main() {
 	// initialize all routes
 	routes.InitRoutes(r)
 	// Initialize StripeKey
-	apis.InitializeStripe(stripeKey)
+	apis.InitializeStripe(stripeKeySecret, stripeKeyPublish)
 	// start gin server
 	r.Run()
 }
